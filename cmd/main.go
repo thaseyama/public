@@ -42,6 +42,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	// 各品目のカロリーを計算して表示
 	totalCalories := 0
 	for _, pfc := range pfcs {
 		calories := CalculateCalorie(pfc.Protein, pfc.Fat, pfc.Carbohydrate)
